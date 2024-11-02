@@ -10,6 +10,7 @@ export function Panel(props) {
   const [loading, setLoading] = useState(false);
   const { addCart } = useCart();
 
+  console.log({ game });
   const platform = game.platform.data;
   const buyPrice = fn.calcDiscountedPrice(game.price, game.discount);
 
